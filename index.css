@@ -1,0 +1,707 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Oleo Script Swash Caps", system-ui;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  border-radius: 60px;
+  background: url(img/1st\ page.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+.hero .inner {
+  position: absolute;
+  background-color: rgba(0, 0, 4, 0.452);
+  width: 100%;
+  height: 100vh;
+}
+.hero .navbar {
+  background: transparent;
+}
+.hero .navbar .offcanvas .offcanvas-body .navbar-nav .nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  color: white;
+}
+.hero .navbar-expand {
+  font-weight: 500;
+  font-size: 24px;
+  text-decoration: none;
+}
+.hero .container {
+  height: 100vh;
+  position: relative;
+}
+.hero .container h4 {
+  font-size: 90px;
+}
+.hero .container p {
+  text-align: center;
+  font-size: 25px;
+}
+.hero .container .exm {
+  background-color: rgb(187, 2, 2);
+  border: none;
+  border-radius: 25px;
+  padding: 14px;
+  font-size: 18px;
+  color: white;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.modal .modal-content {
+  color: black;
+  font-size: 15px;
+  display: flex;
+  text-align: center;
+}
+.modal .modal-content .close {
+  font-size: 34px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: black;
+}
+#menu-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 60%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.aboutUs {
+  padding-top: 160px;
+}
+.aboutUs .container .row .d-flex {
+  gap: 20px;
+}
+.aboutUs .container .row .d-flex .smi {
+  height: 245px;
+  width: 250px;
+}
+.aboutUs .container .row .d-flex .bgi {
+  height: 500px;
+}
+.aboutUs .container .row .text-center {
+  margin-top: 90px;
+}
+.aboutUs .container .row .text-center h3 {
+  color: black;
+  font-size: 40px;
+  padding-bottom: 35px;
+}
+.aboutUs .container .row .text-center p {
+  color: black;
+  padding-top: 30px;
+  font-size: 15px;
+}
+.aboutUs .container .row .text-center .line {
+  width: 27rem;
+  height: 0.19rem;
+  background: red;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutUs .container .row .text-center .btn {
+  background-color: rgb(187, 2, 2);
+  border: none;
+  border-radius: 25px;
+  padding: 14px;
+  font-size: 18px;
+  color: white;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.062);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+.menu .title {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: black;
+}
+.menu .title .underline {
+  width: 13rem;
+  height: 0.15rem;
+  background: red;
+}
+.menu .title h1 {
+  color: black;
+  text-align: center;
+  font-size: 55px;
+}
+.menu .title p {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.reserved-whiskies-center {
+  color: black;
+  display: flex;
+}
+
+.menu-item {
+  color: black;
+}
+.menu-item .photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+}
+.menu-item .item-info .ord {
+  border: none;
+  background-color: rgba(255, 0, 0, 0.308);
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 20px;
+  color: red;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.whiskey-types-section {
+  background-color: rgba(0, 0, 0, 0.062);
+  display: flex;
+  padding-top: 60px;
+  gap: 10px;
+}
+.whiskey-types-section .container .row .title {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: black;
+}
+.whiskey-types-section .container .row .title .underline {
+  width: 9rem;
+  height: 0.18rem;
+  background: red;
+}
+.whiskey-types-section .container .row .title h2 {
+  color: black;
+  text-align: center;
+  font-size: 45px;
+}
+.whiskey-types-section .container .row .title p {
+  font-size: 19px;
+}
+.whiskey-types-section .container .types-center {
+  display: flex;
+  padding-top: 10px;
+  gap: 10px;
+  padding: 20px;
+  color: black;
+}
+
+.type-item {
+  height: 600px;
+  padding-top: 10px;
+  gap: 20px;
+  padding: 20px;
+  color: black;
+  background-color: white;
+}
+.type-item .photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+}
+.type-item .item-info {
+  padding-top: 30px;
+  height: 100px;
+}
+.type-item .item-info .item-text {
+  height: 150px;
+}
+.type-item .item-info .ord {
+  padding-top: 30px;
+  border: none;
+  background-color: rgba(255, 0, 0, 0.308);
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 20px;
+  color: red;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.join {
+  padding-top: 140px;
+  background-color: rgba(0, 0, 0, 0.062);
+}
+.join .container {
+  gap: 25px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.join .container .modal {
+  background-image: url(img/realbg.jpg);
+  display: none;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 70%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  z-index: 1000;
+}
+.join .container .modal .modal-content {
+  background-color: rgba(255, 255, 255, 0.4039215686);
+  border: none;
+  width: 100%;
+}
+.join .container .modal .modal-content .form {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  border: none;
+}
+.join .container .modal .modal-content .form .lab {
+  border: none;
+  border-radius: 20px;
+  padding: 17px;
+  font-size: 15px;
+  font-weight: 900;
+  color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.644);
+}
+.join .container .modal .modal-content .form .sub {
+  background-color: rgb(187, 2, 2);
+  border: none;
+  border-radius: 25px;
+  padding: 13px;
+  font-size: 17px;
+  color: white;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.join .container .exm {
+  background-color: rgb(187, 2, 2);
+  border: none;
+  border-radius: 25px;
+  padding: 14px;
+  font-size: 18px;
+  color: white;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.join .container .modal2 .modal-content2 {
+  color: black;
+  font-size: 15px;
+  display: flex;
+  text-align: center;
+}
+.join .container .modal2 .modal-content2 .close {
+  font-size: 34px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: black;
+}
+.join .container #menu-modal2 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 60%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  z-index: 1000;
+}
+.join .container .row {
+  padding-top: 60px;
+  gap: 20px;
+  flex-direction: row;
+}
+.join .container h5 {
+  font-size: 23px;
+  font-weight: 400;
+}
+.join .container .under {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 70px;
+  gap: 30px;
+}
+.join .container .under .btn {
+  border: none;
+  background-color: rgba(255, 0, 0, 0.952);
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 18px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.Testimonials {
+  background-image: url(img/realbg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+.Testimonials .title {
+  background-color: white;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+.Testimonials .title .underline {
+  width: 13rem;
+  height: 0.15rem;
+  background: red;
+}
+.Testimonials .container .row .testimonials-center {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  justify-items: center;
+  text-align: center;
+  padding-top: 60px;
+}
+.Testimonials .container .row .btn {
+  padding-top: 70px;
+}
+.Testimonials .container .row .btn .exm {
+  background-color: rgb(187, 2, 2);
+  border: none;
+  border-radius: 40px;
+  padding: 17px;
+  font-size: 17px;
+  color: white;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.Testimonials .container .row .email {
+  padding-top: 40px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  justify-items: center;
+}
+.Testimonials .container .row .email #email {
+  border: none;
+  border-radius: 40px;
+  padding: 17px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: black;
+  padding-left: 220px;
+  padding-right: 220px;
+  background-color: rgba(255, 255, 255, 0.644);
+}
+
+.profile-item {
+  padding-top: 30px;
+  height: 550px;
+  width: 350px;
+  color: black;
+  background-color: white;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  justify-items: center;
+}
+.footer .logo img {
+  width: 80px;
+}
+.footer .privacy {
+  display: flex;
+  flex-direction: column;
+}
+.footer .privacy a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 200;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero .container h4 {
+    font-size: 60px;
+  }
+  .hero .container p {
+    width: 100%;
+    font-size: 20px;
+  }
+  .hero .container .exm {
+    font-size: 15px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .aboutUs .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUs .container .row {
+    flex-direction: column;
+  }
+  .aboutUs .container .row .d-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUs .container .row .d-flex .flex-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUs .container .row .d-flex .flex-column img {
+    width: 100%;
+    height: auto;
+  }
+  .aboutUs .container .row .text-center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding-left: 360px;
+  }
+  .aboutUs .container .row .text-center h3 {
+    font-size: 45px;
+  }
+  .aboutUs .container .row .text-center p {
+    font-size: 23px;
+  }
+  .reserved-whiskies-center {
+    color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  .types-center {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-item {
+    width: 100%;
+  }
+  .join .container .row {
+    flex-direction: row;
+  }
+  .join .container .row .col-md-6 {
+    width: 100%;
+  }
+}
+@media (max-width: 764px) {
+  .hero .container h4 {
+    font-size: 55px;
+  }
+  .hero .container p {
+    width: 100%;
+    font-size: 15px;
+  }
+  .hero .container .exm {
+    font-size: 15px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .aboutUs .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUs .container .row {
+    flex-direction: column;
+  }
+  .aboutUs .container .row .d-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUs .container .row .d-flex .flex-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUs .container .row .d-flex .flex-column img {
+    width: 100%;
+    height: auto;
+  }
+  .aboutUs .container .row .text-center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding-left: 360px;
+  }
+  .aboutUs .container .row .text-center h3 {
+    font-size: 45px;
+  }
+  .aboutUs .container .row .text-center p {
+    font-size: 23px;
+  }
+  .reserved-whiskies-center {
+    color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  .types-center {
+    display: flex;
+    flex-direction: column;
+  }
+  .join .container .row {
+    flex-direction: column;
+  }
+  .join .container .row .col-md-6 {
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  .hero .container h4 {
+    font-size: 30px;
+  }
+  .hero .container p {
+    width: 100%;
+    font-size: 18px;
+  }
+  .hero .container .exm {
+    font-size: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .aboutUs .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUs .container .row {
+    flex-direction: column;
+  }
+  .aboutUs .container .row .d-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUs .container .row .d-flex .flex-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUs .container .row .d-flex .flex-column img {
+    width: 100%;
+    height: auto;
+  }
+  .aboutUs .container .row .text-center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding-left: 360px;
+  }
+  .aboutUs .container .row .text-center h3 {
+    font-size: 35px;
+  }
+  .aboutUs .container .row .text-center p {
+    font-size: 20px;
+  }
+  .reserved-whiskies-center {
+    color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  .types-center {
+    display: flex;
+    flex-direction: column;
+  }
+  .join .container .row {
+    flex-direction: column;
+  }
+  .join .container .row .col-md-6 {
+    width: 100%;
+  }
+  .join .container .row .col-md-6 img {
+    width: 100%;
+  }
+  .testimonials-center {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=index.css.map */
