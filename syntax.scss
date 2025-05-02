@@ -1,0 +1,84 @@
+*{
+
+}
+
+
+
+.navbar{
+    background: transparent;
+    font-weight: 500;
+    color: red;
+    font-size: 24px;
+    text-decoration: none;
+    a{
+        color: red;
+        text-decoration: none; 
+    }
+    .offcanvas{
+        .offcanvas-body{
+            .nav-link{
+                font-weight: 500;
+                position: relative;
+            }
+        }
+    }
+}
+
+.hero{
+    
+        background: url(img/1st\ page.png) ;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+
+         h1{
+            font-size: 8rem;
+            padding-bottom: 140px;
+            }
+      
+    .container{
+        height: 100vh;
+        z-index: 1;
+        position: relative;
+        .overlay{
+           background-color: rgba(0, 0, 0, 0.509);
+           width: 100%;
+           background-position: center;
+           background-size: cover;
+           z-index: -1;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 991px) {
+    .nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 5px;
+      
+      width: 100%;
+      height: 2px;
+      
+      visibility: hidden;
+    
+    }
+  
+   
+ }
