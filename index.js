@@ -11,41 +11,59 @@ function getStarRating(rating) {
   return stars;
 }
 
-// Reserved Whiskies Section
 let reservedWhiskies = [
   {
     id: 1,
-    title: "Select Reserve",
+    title: "Cascamates",
     rating: 4.5,
-    img: "/img/limitedreserve.png",
-    desc: "Select Reserve is a triple <br>distilled blend of rich pot still<br>and grain whiskey that is<br>matured in a mixture of sherry<br>casks and bourbon barrels",
+    img: "/img/image3.png",
+    desc: "Jameson Caskmates Stout and IPA edition - triple distilled whiskey you love finished in craft beer barrels",
     orderNow: "Order now",
   },
   {
     id: 2,
-    title: "Limited Reserve",
+    title: "Blender’s Dog",
     rating: 4.5,
-    img: "/img/limitedreserve.png",
-    desc: "Matured for 18 years in hand <br>selected oak casks from Europeand America, this rare whiskey<br>is finished in first-fill bourbon<br>barrels",
+    img: "/img/image2.png",
+    desc: "A rich, round, creamy mouthfeel, with the sweetness of butterscotch, giving way to the prickle of the pot still spices.",
     orderNow: "Order now",
   },
   {
-    id: 2,
-    title: "Gold Reserve",
+    id: 3,
+    title: "Black Barrel",
     rating: 4.5,
-    img: "/img/goldreseve.png",
-    desc: "A rich and chewy entry in the <br>Jameson range, with three<br>styles of pot still spirit carefully<br>balanced",
+    img: "/img/image3.png",
+    desc: "Our tribute to our coopers, who painstakingly give their bourbon barrels an additional charring to reveal their untold richness.",
     orderNow: "Order now",
   },
   {
-    id: 2,
-    title: "Special Reserve",
+    id: 4,
+    title: "Crested",
     rating: 4.5,
-    img: "/img/image6.png",
-    desc: "This is a smooth, spicy 12<br>year old blended Irish <br>whiskey with a good content<br>of pure potstil.",
+    img: "/img/image1.png",
+    desc: "Crested is a tribute to the first drops bottled at The Bow Street Distillery and is Jameson's oldest distillery bottled brand.",
     orderNow: "Order now",
   },
 ];
+
+const reservedContainer = document.getElementById("reserved-whiskies-list");
+
+window.addEventListener("DOMContentLoaded", () => {
+  let reservedHTML = reservedWhiskies
+    .map((item) => {
+      return `
+      <div class="reserved-card">
+        <img src="${item.img}" alt="${item.title}">
+        <h3>${item.title}</h3>
+        <p>${item.desc}</p>
+        <button class="order-now">${item.orderNow}</button>
+      </div>
+      `;
+    })
+    .join("");
+  reservedContainer.innerHTML = reservedHTML;
+});
+
 
 // Whiskey Types Section
 let whiskeyTypes = [
